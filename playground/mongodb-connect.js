@@ -1,10 +1,12 @@
 // const MongoClient = require('mongodb').MongoClient;
 
 const {MongoClient, ObjectID} = require('mongodb');
+//
+// var obj = new ObjectID();
+//
+// console.log(obj)
 
-var obj = new ObjectID();
 
-console.log(obj)
 
 db = MongoClient.connect('mongodb://root:saveYourself@localhost:27017/TodoApp?authSource=admin', (err,db) =>{
   if(err){
